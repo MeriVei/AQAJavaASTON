@@ -4,14 +4,12 @@ public class Main {
         checkSumSign();
         printColor();
         compareNumbers();
-
-
     }
 
     private static void compareNumbers() {
         int a = 3;
         int b = 5;
-        if (a >= b){
+        if (a >= b) {
             System.out.println("a>=b");
         } else {
             System.out.println("a<b");
@@ -20,18 +18,18 @@ public class Main {
 
     private static void printColor() {
         int value = 156;
-        if (value <=0){
+        if (value <= 0) {
             System.out.println("Красный");
-        } else if (value > 0 && value <= 100){
+        } else if (value > 0 && value <= 100) {
             System.out.println("Желтый");
-        } else if (value > 100){
+        } else if (value > 100) {
             System.out.println("Зеленый");
         }
     }
 
     private static void checkSumSign() {
         int a = 5;
-        int b =7;
+        int b = 7;
         int g = a + b;
         if (g >= 0) {
             System.out.println("Сумма положительная");
@@ -42,9 +40,5 @@ public class Main {
 
     private static void printThreeWords() {
         System.out.println("Orange\nBanana\nApple");
-
-
     }
-
-
 }
