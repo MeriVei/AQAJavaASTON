@@ -63,12 +63,12 @@ public class Employee {
         this.age = age;
     }
 
-    public void print(){
-        System.out.println("ФИО: "+name+"\t"+
-                            "должность: "+jobTitle+"\t"+
-                            "email: " +email+"\t"+
-                            "телефон: " +phone+"\t"+
-                            "зарплата: "+salary+"\t"+
-                            "возраст: "+age);
+    public void print() {
+        System.out.println("ФИО: " + name + "\t" +
+                "должность: " + jobTitle + "\t" +
+                "email: " + email + "\t" +
+                "телефон: " + phone + "\t" +
+                "зарплата: " + salary + "\t" +
+                "возраст: " + age);
     }
 }
