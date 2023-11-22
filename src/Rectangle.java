@@ -1,4 +1,4 @@
-public class Rectangle implements MathCalculation{
+public class Rectangle implements MathCalculation {
 
     private String backgroundColor;
     private String borderColor;

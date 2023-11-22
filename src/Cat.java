@@ -29,14 +29,14 @@ public class Cat extends Animal {
     @Override
     public void run(int a) {
         super.run(Math.min(a, 200));
-        if (a > 200){
+        if (a > 200) {
             System.out.println("Кот может только пробежать 200 м!");
         }
     }
 
     @Override
     public void swim(int a) {
-        if (a > 0){
+        if (a > 0) {
             System.out.println("Кот не умеет плавать!");
         }
     }

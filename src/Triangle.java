@@ -1,4 +1,4 @@
-public class Triangle implements MathCalculation{
+public class Triangle implements MathCalculation {
 
     private String backgroundColor;
     private String borderColor;
@@ -18,7 +18,7 @@ public class Triangle implements MathCalculation{
 
     @Override
     public double perimeterCalculate(int[] a) {
-        if (a.length < 3){
+        if (a.length < 3) {
             return -1;
         }
         return a[0] + a[1] + a[2];
@@ -26,10 +26,10 @@ public class Triangle implements MathCalculation{
 
     @Override
     public double areaCalculate(int[] a) {
-        if (a.length < 3){
+        if (a.length < 3) {
             return -1;
         }
         double pp = (double) (a[0] + a[1] + a[2]) / 2;
-        return Math.sqrt(pp*(pp-a[0])*(pp-a[1])*(pp-a[2]));
+        return Math.sqrt(pp * (pp - a[0]) * (pp - a[1]) * (pp - a[2]));
     }
 }

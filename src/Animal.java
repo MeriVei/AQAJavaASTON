@@ -8,6 +8,10 @@ public class Animal {
         numberOfCopiesAnimals++;
     }
 
+    public static int getNumberOfCopiesAnimals() {
+        return numberOfCopiesAnimals;
+    }
+
     public String getName() {
         return name;
     }
@@ -16,15 +20,11 @@ public class Animal {
         this.name = name;
     }
 
-    public static int getNumberOfCopiesAnimals() {
-        return numberOfCopiesAnimals;
+    public void run(int a) {
+        System.out.println(name + " пробежало " + a + " м");
     }
 
-    public void run(int a){
-        System.out.println(name+" пробежало "+a+" м");
-    }
-
-    public void swim(int a){
-        System.out.println(name+" проплыло "+a+" м");
+    public void swim(int a) {
+        System.out.println(name + " проплыло " + a + " м");
     }
 }

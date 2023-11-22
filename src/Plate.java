@@ -13,12 +13,12 @@ public class Plate {
         this.food = food;
     }
 
-    public void addFood(int food){
+    public void addFood(int food) {
         this.food += food;
     }
 
-    public boolean eat(int food){
-        if (food <= this.food){
+    public boolean eat(int food) {
+        if (food <= this.food) {
             this.food -= food;
             return true;
         } else {
