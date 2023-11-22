@@ -1,18 +1,18 @@
 public class Rectangle implements MathCalculation{
 
     private String backgroundColor;
-    private String borderСolor;
+    private String borderColor;
 
-    public Rectangle(String backgroundColor, String borderСolor) {
+    public Rectangle(String backgroundColor, String borderColor) {
         this.backgroundColor = backgroundColor;
-        this.borderСolor = borderСolor;
+        this.borderColor = borderColor;
     }
 
     public String getBackgroundColor() {
         return backgroundColor;
     }
 
-    public String getBorderСolor() {
-        return borderСolor;
+    public String getBorderColor() {
+        return borderColor;
     }
 }

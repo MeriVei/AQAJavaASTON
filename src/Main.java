@@ -33,6 +33,20 @@ public class Main {
             System.out.println();
         } while (isNotSatiety);
 
-
+        Circle circle = new Circle("Синий","Черный");
+        Rectangle rectangle = new Rectangle("Зеленый","Серый");
+        Triangle triangle = new Triangle("Оранжевый","Розовый");
+        System.out.println("Круг:\nПериметр: "+circle.perimeterCalculate(new int[]{5})
+                +"\nПлощадь: "+circle.areaCalculate(new int[]{5})
+                +"\nЦвер фона: "+circle.getBackgroundColor()
+                +"\nЦвет границ: "+circle.getBorderColor());
+        System.out.println("\nТреугольник:\nПериметр: "+triangle.perimeterCalculate(new int[]{2,3,4})
+                +"\nПлощадь: "+triangle.areaCalculate(new int[]{2,3,4})
+                +"\nЦвер фона: "+triangle.getBackgroundColor()
+                +"\nЦвет границ: "+triangle.getBorderColor());
+        System.out.println("\nПрямоугольник:\nПериметр: "+rectangle.perimeterCalculate(new int[]{2,3,2,3})
+                +"\nПлощадь: "+rectangle.areaCalculate(new int[]{2,3})
+                +"\nЦвер фона: "+rectangle.getBackgroundColor()
+                +"\nЦвет границ: "+rectangle.getBorderColor());
     }
 }

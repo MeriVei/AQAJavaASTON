@@ -1,19 +1,19 @@
 public class Circle implements MathCalculation{
 
     private String backgroundColor;
-    private String borderСolor;
+    private String borderColor;
 
-    public Circle(String backgroundColor, String borderСolor) {
+    public Circle(String backgroundColor, String borderColor) {
         this.backgroundColor = backgroundColor;
-        this.borderСolor = borderСolor;
+        this.borderColor = borderColor;
     }
 
     public String getBackgroundColor() {
         return backgroundColor;
     }
 
-    public String getBorderСolor() {
-        return borderСolor;
+    public String getBorderColor() {
+        return borderColor;
     }
 
     @Override
