@@ -21,7 +21,7 @@ public class Main {
         do {
             isNotSatiety = false;
             for (Cat c : cats) {
-                if (!c.isSatiety()){
+                if (!c.isSatiety()) {
                     c.setSatiety(plate.eat(c.getAppetite()));
                 }
                 System.out.println(c.getName() + " " + (c.isSatiety() ? "сыт" : "голоден"));
