@@ -10,6 +10,10 @@ public class Main {
         cat.run(100);
         cat.swim(5);
 
+        System.out.println("Количество котов = " + Cat.getNumberOfCopiesCats());
+        System.out.println("Количество собак = " + Dog.getNumberOfCopiesDogs());
+        System.out.println("Количество животных = " + Animal.getNumberOfCopiesAnimals());
+
         Cat[] cats = new Cat[5];
         cats[0] = new Cat("Кот 1", 20);
         cats[1] = new Cat("Кот 2", 5);

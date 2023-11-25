@@ -16,10 +16,6 @@ public class Animal {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void run(int a) {
         System.out.println(name + " пробежало " + a + " м");
     }
