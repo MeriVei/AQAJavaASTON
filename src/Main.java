@@ -1,21 +1,28 @@
 public class Main {
     public static void main(String[] args) {
         try {
-            sum(new String[][]{{"1", "2", "l", "5"}, {"1", "1", "1", "1", "t"},
-                    {"1", "1", "1", "1"}, {"1", "1", "1", "1"}});
+            System.out.println("Результат: " + sum(new String[][]{{"1", "2", "l", "5"}, {"1", "1", "1", "1", "t"},
+                    {"1", "1", "1", "1"}, {"1", "1", "1", "1"}}));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e.getMessage());
         }
 
         try {
-            sum(new String[][]{{"1", "2", "l", "5"}, {"1", "1", "1", "1"},
-                    {"1", "1", "1", "1"}, {"1", "1", "1", "1"}});
+            System.out.println("Результат: " + sum(new String[][]{{"1", "2", "l", "5"}, {"1", "1", "1", "1"},
+                    {"1", "1", "1", "1"}, {"1", "1", "1", "1"}}));
+        } catch (MyArraySizeException | MyArrayDataException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            System.out.println("Результат: " + sum(new String[][]{{"1", "2", "3", "5"}, {"1", "1", "1", "1"},
+                    {"1", "1", "1", "1"}, {"1", "1", "1", "1"}}));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e.getMessage());
         }
     }
 
-    public static void sum(String[][] aq) throws MyArraySizeException, MyArrayDataException {
+    public static int sum(String[][] aq) throws MyArraySizeException, MyArrayDataException {
         if (aq.length != 4) {
             throw new MyArraySizeException("Размер массива не равен 4х4");
         }
@@ -30,6 +37,7 @@ public class Main {
                 rezult += getNumber(aq[i][j], i, j);
             }
         }
+        return rezult;
     }
 
     public static Integer getNumber(String str, int i, int j) throws MyArrayDataException {
